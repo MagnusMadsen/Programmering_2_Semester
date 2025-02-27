@@ -16,12 +16,28 @@ int OPEN_WebshopDB(const char* DB_file) {
 
 }
 
+int CLOSE_WebshopDB(const char* DB_file2) {
+
+    sqlite3_close(DB_file2, &db);
+
+    return 0;
+
+}
+
 
 TEST_CASE("opening the database", "[sql]") {
 
     REQUIRE(OPEN_WebshopDB("webshop.db") == 0);
   
 }
+
+TEST_CASE("closing the database", "[sql]") {
+
+    REQUIRE(CLOSE_WebshopDB("webshop.db") == 0);
+  
+}
+
+
 
 
 
