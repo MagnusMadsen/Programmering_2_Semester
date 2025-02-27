@@ -11,7 +11,7 @@
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-I", "${workspaceFolder}/Include",
-                "-I", "sqlite3",
+                "-1", "sqlite3",
             ],
             "options": {
                 "cwd": "${fileDirname}"
