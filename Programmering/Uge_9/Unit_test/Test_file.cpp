@@ -11,13 +11,15 @@ sqlite3 *db;
 int OPEN_WebshopDB(const char* DB_file) {
 
     sqlite3_open(DB_file, &db);
+
     return 0; 
 
 }
 
+
 TEST_CASE("opening the database", "[sql]") {
 
-    REQUIRE(OPEN_WebshopDB("Webshop.db") == 0);
+    REQUIRE(OPEN_WebshopDB("webshop.db") == 0);
   
 }
 
