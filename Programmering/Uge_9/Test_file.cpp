@@ -1,5 +1,9 @@
 #define CATCH_CONFIG_MAIN 
 #include <Catch2_headerfile.hpp>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
 
 
 
@@ -14,5 +18,8 @@ TEST_CASE( "Factorials are computed", "[factorial]" ) {
     REQUIRE( Factorial(3) == 6 );
     REQUIRE( Factorial(10) == 3628800 );
 }
+
+printf("Hello World!");
+
 
 
